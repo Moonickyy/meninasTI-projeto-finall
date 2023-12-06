@@ -19,6 +19,8 @@ header {
 
 .menu nav ul li, .social ul li {
     margin: 0px 12px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 190%;
 }
 
 .menu, .social {
@@ -48,6 +50,7 @@ section.banner {
 section.banner .conteudo {
     background-color: rgb(211, 135, 161);
     padding: 12px;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 section.banner .imagem img {
@@ -73,8 +76,11 @@ section.sobre div {
 section.sobre .imagem img {
     width: 100%;
 }
-section.sobre .conteudo {margin: 12px 24px;}
-
+section.sobre .conteudo {
+    margin: 12px 24px;
+    font-size: 155%;
+    font-family: 'Oswald', sans-serif;
+}
 section.adoção {
     width: 100%;
     margin: 12px;
