@@ -7,8 +7,8 @@ header {
     width: 100%;
     min-height: 64px;
     justify-content: space-around;
-    border-bottom: 1px solid #0e0e0e;
-    background-color: #5a8eca;
+    border-bottom: 1px solid #c2313100;
+    background-color: #c99aaf;
 }
 
 .menu nav ul, .social ul {
@@ -46,7 +46,7 @@ section.banner {
 }
 
 section.banner .conteudo {
-    background-color: rgb(81, 150, 207);
+    background-color: rgb(211, 135, 161);
     padding: 12px;
 }
 
