@@ -36,11 +36,9 @@ header {
 section.banner {
     width: 100%;
     height: 90vh;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
     background: url(banner.png);
+    background-color: rgb(219, 190, 200);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -51,10 +49,13 @@ section.banner .conteudo {
     background-color: rgb(211, 135, 161);
     padding: 12px;
     font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+    height:55vh;
 }
 
 section.banner .imagem img {
-    width: 50%;
+    width: 55vh;
+    float: right;
 }
 
 section.banner .botao {
@@ -64,7 +65,7 @@ section.banner .botao {
     cursor: pointer;
 }
 section.sobre {
-    width: 100%;
+    width: auto;
     margin: 12px;
     display: flex;
     flex-direction: row;
@@ -81,23 +82,66 @@ section.sobre .conteudo {
     font-size: 155%;
     font-family: 'Oswald', sans-serif;
 }
-section.adoção {
-    width: 100%;
-    margin: 12px;
+section.adocao {
+    width: 90%;
+    margin: 12px auto;
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: row;
     gap: 24px;
 }
-
-section.adoção .imagem img {
+.single-pet img {
+    height: 128px;
+}
+section.adocao .imagem img {
     height: 50%;
 }
+.single-pet{border: 2px solid #fefefe;
+    border-radius: 50px;
+    padding: 12px;
+    background-color: #fefefe;}
+section.cardapio{
+    height: 75vh;
+    background-color: #e5e5f7;
+    opacity: 0.5;
+    background-image:  linear-gradient(135deg, #cda5d0 25%, transparent 25%), linear-gradient(225deg, #cda5d0 25%, transparent 25%), linear-gradient(45deg, #cda5d0 25%, transparent 25%), linear-gradient(315deg, #cda5d0 25%, #e5e5f7 25%);
+    background-position:  11px 0, 11px 0, 0 0, 0 0;
+    background-size: 22px 22px;
+    background-repeat: repeat;
+}
+div.cardapio{opacity: 1 !important;}
+div.cardapio h2 {
+    font-size: 54px;
+}
 
+div.cardapio a {
+    font-size: 28px;
+}
+footer img{
+    width:220px;
+}
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color:#fefefe;
+    -webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }  
+  #meuheader .logo img.sticky {
+    width: 60px;
+    -webkit-animation: fade-in 0.8s cubic-bezier(0.600, 0.040, 0.980, 0.335) both;
+    animation: fade-in 0.8s cubic-bezier(0.600, 0.040, 0.980, 0.335) both;
+  }  
+  .sticky + .content {
+    padding-top: 102px;
+  }
 
+  @-webkit-keyframes fade-in{0%{opacity:0}100%{opacity:1}}@keyframes fade-in{0%{opacity:0}100%{opacity:1}}
 
+  @-webkit-keyframes slide-in-top{0%{-webkit-transform:translateY(-1000px);transform:translateY(-1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes slide-in-top{0%{-webkit-transform:translateY(-1000px);transform:translateY(-1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
 
 
 

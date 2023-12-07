@@ -24,7 +24,7 @@
     </style>
 </head>
 <body>
-    <header>
+    <header id="meuheader">
         <div class="logo"><img src="img/gatinhos-removebg-preview.png" /></div>
         <div class="menu"><nav>
             <ul>
@@ -42,68 +42,113 @@
             </ul>
         </div>
     </header>
-                }
-    <section class="banner" id="home">
-        <div class="imagem">
+    <section class="banner col d-flex flex-column flex-md-row justify-content-center" id="home">
+        <div class="imagem col col-md-5">
             <img src="img/gatocafe.jpg">
         </div>
-        <div class="conteudo">
+        <div class="conteudo col col-md-5 d-flex flex-column justify-content-center align-items-center">
             <h2>Catpuccino</h2>
             <p>O primeiro Cat café de Novo Hamburgo</p>
         </div>
     </section>
-    <section class="sobre" id="sobre">
+    <section class="sobre py-4" id="sobre">
         <div class="imagem">
             <img src="img/Conceito-de-cat-cafe-ganha-forca-no-Brasil0321995500202208181658.jpg" />
         </div>
         <div class="conteudo">
             <h2>Nosso Cat café</h2>
             <p>
-                Venha conhecer o primeiro Cat Café de Novo Hamburgo!<br><br>
-
-                O conceito de cat cafe surgiu em Taiwan, e hoje é sucesso no Japão,<br>tornando-se cada vez mais popular pelo mundo. Um cat cafe é um am-<br>biente em que você pode passar seu tempo unindo o prazer de tomar um<br> bom café com a experiência de estar ao lado e interagir com os bichanos.<br><br>
+                Venha conhecer o primeiro Cat Café de Novo Hamburgo!</p>
+            <p>
+                O conceito de cat cafe surgiu em Taiwan, e hoje é sucesso no Japão, tornando-se cada vez mais popular pelo mundo. Um cat cafe é um ambiente em que você pode passar seu tempo unindo o prazer de tomar um bom café com a experiência de estar ao lado e interagir com os bichanos.</p>
+            <p>
                 No Brasil o cat cafe é uma novidade e promete espalhar amor por onde passar pois além de tudo, os gatos que vivem no café pertencem à ONGs parceiras e, por tanto, estarão para adoção!
             </p>
         </div>
-    </section><br><br>
-    <section class="adoção" id="adoção">
-        <div class="conteudo">
-            <h2>Conheça nossos gatinhos</h2><br><br>
-        </div>
-        <div class="produto">
-            <img src="img/gatomalhadinho2.jpg" width="60%" />
-            <h3>Bisca</h3>
-            <p>Fêmea</p>
-        </div>
-        <div class="produto">
-            <img src="img/gatoTricolor3.jpg" width="55%" />
-            <h3>Trix</h3>
-            <p>Fêmea</p>
-        </div>
-        <div class="produto">
-            <img src="img/gatofrajolinha.jpg" width="40%" />
-            <h3>Frajola</h3>
-            <p>Macho</p>
-        </div>
-        <div class="produto">
-            <img src="img/gatotigre.jpeg" width="35%" />
-            <h3>Kitty</h3>
-            <p>Fêmea</p>
-        </div>
     </section>
-    <section class="cardápio" id="cardápio">
-        <div class="cardápio">
+    <div class="adocao-titulo container conteudo col p-4 mx-auto text-center">
+        <h2>Conheça nossos gatinhos</h2>
+    </div>
+    <section class="adocao" id="adocao">
+    </section>
+    <section class="cardapio col d-flex flex-nowrap flex-column justify-content-center align-items-center py-4 px-2 my-2 mx-auto " id="cardapio">
+        <div class="cardapio text-center">
             <h2>Nosso cardápio</h2>
-        <nav>
-            <ul>
-            <li><a href="img/cardapiogato.png"> Ver cardápio online</a></li>
-            </ul>
-        </nav>
+            <a class="text-decoration-none text-dark col" href="img/cardapiogato.png"> Ver cardápio online</a>
         </div>
     </section>
-    <section>
-        
-    </section>
-    
+    <footer class="col d-flex flex-column flex-md-row p-4 my-3 mx-auto justify-content-around gap-2">
+        <div class="col col-md-4 d-flex flex-column gap-2 p-3">
+            <h2>Catpuccino</h2>
+            <img src="img/gatinhos-removebg-preview.png" />
+        </div>
+        <div class="col col-md-4 d-flex flex-column gap-2 p-3">
+            <h2>Cardápio</h2>
+            <a class="text-decoration-none text-dark col" href="img/cardapiogato.png"> Ver cardápio online</a>
+        </div>
+        <div class="col col-md-4 d-flex flex-column gap-2 p-3">
+            <h2>Localização</h2>
+            <p><a class="text-decoration-none text-dark col" href="https://google.maps.link">Rua Falsa, 123, cidade falsa, rs, br</a></p>
+            <p><a class="text-decoration-none text-dark col" href="tel:+555555555555">+55 55 55555.5555</a></p>
+            <p><a class="text-decoration-none text-dark col" href="mailto:email@email.com">email@email.com</a></p>
+        </div>
+    </footer>
+    <script>
+            var petsObj = [
+        {
+            imagem: "img/gatomalhadinho2.jpg",
+            nome: "Bisca",
+            genero: "Fêmea",
+        },
+        {
+            imagem: "img/gatoTricolor3.jpg",
+            nome: "Trix",
+            genero: "Fêmea",
+        },
+        {
+            imagem: "img/gatofrajolinha.jpg",
+            nome: "Frajola",
+            genero: "Macho",
+        },
+        {
+            imagem: "img/gatotigre.jpeg",
+            nome: "Kitty",
+            genero: "Fêmea",
+        },
+    ];
+    var adocao = document.getElementById("adocao");
+        petsObj.forEach(element => {
+            var singlePet = document.createElement("div");
+            singlePet.classList.add("col", "col-md-3", "d-flex", "flex-column", "justify", "gap-2", "align-items-center", "single-pet");
+            var singlePetImage = document.createElement("img");
+            var singlePetNome = document.createElement("h3");
+            var singlePetGenero = document.createElement("p");
+
+            singlePetImage.src = element["imagem"];
+            singlePetGenero.innerHTML = element["genero"];
+            singlePetNome.innerHTML = element["nome"];
+
+            singlePet.appendChild(singlePetImage);
+            singlePet.appendChild(singlePetGenero);
+            singlePet.appendChild(singlePetNome);
+
+            adocao.appendChild(singlePet);
+        });
+
+        window.onscroll = function(){minhafuncao()};
+    var header = document.getElementById("meuheader");
+    var logo = document.querySelector("#meuheader .logo img");
+    var sticky = header.offsetTop;
+        function minhafuncao(){
+            if((window.pageYOffset > sticky)){
+                header.classList.add("sticky");
+                logo.classList.add("sticky");
+            }
+            else{
+                header.classList.remove("sticky");
+                logo.classList.remove("sticky");
+            }
+        }
+    </script>
 </body>
 </html>
