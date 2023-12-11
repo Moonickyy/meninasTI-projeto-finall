@@ -8,7 +8,7 @@ header {
     min-height: 64px;
     justify-content: space-around;
     border-bottom: 1px solid #c2313100;
-    background-color: #c99aaf;
+    background-color: rgb(208, 136, 164);
 }
 
 .menu nav ul, .social ul {
@@ -38,7 +38,7 @@ section.banner {
     height: 90vh;
     align-items: center;
     background: url(banner.png);
-    background-color: rgb(219, 190, 200);
+    background-color: rgb(218, 176, 195);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -46,7 +46,7 @@ section.banner {
 }
 
 section.banner .conteudo {
-    background-color: rgb(211, 135, 161);
+    background-color: rgb(220, 145, 171);
     padding: 12px;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 30px;
@@ -83,40 +83,48 @@ section.sobre .conteudo {
     font-family: 'Oswald', sans-serif;
 }
 section.adocao {
-    width: 90%;
-    margin: 12px auto;
+    width: 91%;
+    margin: 36px auto;
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: row;
-    gap: 24px;
+    gap: 25px;
+}
+div.adocao-titulo h2 {
+    font-size: 80px;
+    font-family: 'Bebas Neue', sans-serif;
 }
 .single-pet img {
-    height: 128px;
+    height: 220px;
 }
 section.adocao .imagem img {
-    height: 50%;
+    height: 220%;
 }
-.single-pet{border: 2px solid #fefefe;
-    border-radius: 50px;
-    padding: 12px;
-    background-color: #fefefe;}
+.single-pet {
+    border: 20px solid #fefefe;
+    border-radius: 39px;
+    padding: 53px;
+    background-color: #fefefe;
+}
 section.cardapio{
     height: 75vh;
     background-color: #e5e5f7;
     opacity: 0.5;
-    background-image:  linear-gradient(135deg, #cda5d0 25%, transparent 25%), linear-gradient(225deg, #cda5d0 25%, transparent 25%), linear-gradient(45deg, #cda5d0 25%, transparent 25%), linear-gradient(315deg, #cda5d0 25%, #e5e5f7 25%);
+    background-image:  linear-gradient(135deg, rgb(218, 176, 195) 25%, transparent 25%), linear-gradient(225deg, rgb(218, 176, 195) 25%, transparent 25%), linear-gradient(45deg, rgb(218, 176, 195) 25%, transparent 25%), linear-gradient(315deg, rgb(218, 176, 195) 25%, rgb(205, 127, 154) 25%);
     background-position:  11px 0, 11px 0, 0 0, 0 0;
     background-size: 22px 22px;
     background-repeat: repeat;
 }
 div.cardapio{opacity: 1 !important;}
 div.cardapio h2 {
-    font-size: 54px;
+    font-size: 90px;
+    font-family:'Bebas Neue', sans-serif;
 }
 
 div.cardapio a {
-    font-size: 28px;
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
 }
 footer img{
     width:220px;
@@ -126,7 +134,7 @@ footer img{
     position: fixed;
     top: 0;
     width: 100%;
-    background-color:#fefefe;
+    background-color:rgb(208, 136, 164);
     -webkit-animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: slide-in-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   }  
@@ -142,6 +150,12 @@ footer img{
   @-webkit-keyframes fade-in{0%{opacity:0}100%{opacity:1}}@keyframes fade-in{0%{opacity:0}100%{opacity:1}}
 
   @-webkit-keyframes slide-in-top{0%{-webkit-transform:translateY(-1000px);transform:translateY(-1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes slide-in-top{0%{-webkit-transform:translateY(-1000px);transform:translateY(-1000px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+
+
+
+
+
+
 
 
 
